@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            padding: 20px 20px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 102vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("./img/bbb.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+        .intro h1 {
+            font-family: sans-serif;
+            font-size: 60px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+          }
+      
+          .intro p {
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase;
+            margin: 20px 0;
+          }
+          .flip {
+            animation: 1.5s anim-flipX ease infinite;
+          }
+          @keyframes anim-flipX {
+            0% {
+              opacity: 0;
+              transform: rotateX(90def);
+            }
+            50% {
+              opacity: 1;
+              transform: rotateX(720deg);
+            }
+            100% {
+              opacity: 1;
+              transform: rotateX(720deg);
+            }
+          } 
+        section {
+            padding: 100px;
+            text-align: center;
+        }
+        
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            header h1 {
+                margin: 0;
+                color: rgb(7, 56, 92)0, 223, 255);
+            }
+    
+            nav ul {
+                list-style: none;
+                padding: 0;
+                text-align: center;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+    
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+    
+            nav ul li a:hover {
+                color: #f7ca18;
+            }
+    
+            section {
+                padding: 0px;
+                text-align: center;
+            }
+    
+            section h2 {
+                margin-bottom: 10px;
+            }
+    
+            section p {
+                margin-bottom: 20px;
+            }
+    
+            section img {
+                width: 100%;
+                height: auto;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 40px 40px;
+                position:bottom;
+                width: 100%;
+            }
+            #menu ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            #about {
+                padding: 50px 50px;
+            }
+            #menu{
+                padding: 70px 70px;
+            }
+    
+            #menu ul li {
+                width: 200px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                background-color: #fff;
+            }
+    
+            /* Styling for Contact section */
+            #contact {
+                background-color: #fff;
+                padding: 50px;
+            }
+    
+            #contact p {
+                margin-bottom: 8px;
+            }
+    
+            /* Responsive design */
+            @media(max-width: 768px) {
+                header nav ul li {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+    
+                #menu ul li {
+                    width: 100%;
+                }
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="flip">Delicious Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <h1><i>Welcome to Delicious Restaurant</i></h1> 
+            <p><b>Enjoy a variety of delicious dishes at our restaurant!</b></p>
+            <p>We specialize in <strong>mouthwatering cuisine</strong> prepared with fresh ingredients.</p>                 
+        </div>
+        <!-- <div class="intro">
+                    <section id="home">
+                    <img src="./bbb.jpg" alt="Restaurant Image">
+                    <h2>Welcome to Delicious Restaurant</h2>
+                    <p>Enjoy a variety of delicious dishes at our restaurant!</p>
+                    <p>We specialize in <strong>mouthwatering cuisine</strong> prepared with fresh ingredients.</p>
+                    
+                    </section>
+        </div> -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Check out our delicious menu items:</p>
+        <ul>
+            <li><img src="./img/BBB1.jpg" alt=""></li>
+            <li><img src="./img/BBB2.jpg" alt=""></li>
+            <li><img src="./img/BBB3.jpg" alt=""></li>
+            <li><img src="./img/BBB4.jpg" alt=""></li>
+            <li><img src="./img/BBB5.jpg" alt=""></li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about food and delivering a great dining experience to our customers.</p>
+        <p>Our chefs use only the freshest ingredients to create culinary masterpieces!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Restaurant St, City, Country</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@deliciousrestaurant.com</p>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2023 Delicious Restaurant</p>
+    </footer>
+</body>
+</html>
